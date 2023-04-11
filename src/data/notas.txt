@@ -1,0 +1,17 @@
+const App = () => {
+  const [tasks, setTasks] = useState([]);
+
+  // useEffect ejecuta algo cada vez que exista un cambio en la pagina
+  useEffect(() => {
+    setTasks(data);
+  }, []);
+  // o si cambia una varible que hemos especificado en el array [] comp por dar un ejemplo,
+  //se ejecuta cuando cargue el componente en este caso ***, una vez porque hemos puesto []
+
+  return (
+    <div>
+      <TaskForm />
+      <TaskList />
+    </div>
+  );
+};
